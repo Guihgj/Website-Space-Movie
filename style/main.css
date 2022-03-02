@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(15, 13, 13);
+  color: rgb(245, 137, 49);
+  padding:30px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color:orange;
+  padding: 1rem;
+  transition:0.2s ease;
+}
+
+.navbar-links li a:hover {
+  background:orange;
+  color:#fff;
+  border-radius:10px;
+
+}
+
+.menu-button {
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.menu-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.container {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+
+
+
+
+
+.btn {
+  background: rgb(245, 128, 33);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.principal{
+width:100%;
+}
+.txt-principal{
+width:100%;
+margin-top:80px;  
+}
+
+.titulo-principal{
+width:100%;
+}
+
+.titulo-main{
+ color:orange;
+ font-size:2.40rem;
+}
+
+.descricao-main{
+width:70%;
+font-size:1.10rem;
+margin-top:30px;  
+}
+
+.pesquisa{
+width:100%;
+margin-top:100px;  
+}
+
+.principal {
+  background: linear-gradient(rgba(7, 7, 7, 0.5), rgb(10, 10, 10, 0.5) 100%),
+    url("../img/gift.gif");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descricao-principal,
+.inscricao p {
+  width: 70%;
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+.titulo-principal,
+.titulo-inscreva {
+  font-size: 3.125rem;
+  color: rgb(245, 128, 33);
+}
+
+.botoes {
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+}
+
+.filmes .container {
+  margin-top: 50px;
+}
+
+.pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.busca {
+  width: 70%;
+  padding: 20px; /* Coloquei para a descrição ficar menos grudada na borda*/
+  border-radius: 10px;
+  height: 50px;
+}
+
+.btn-principal {
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+}
+
+.btn-principal i {
+  margin-left: 5px;
+}
+
+.flex-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filmes {
+  margin-top: 30px;
+}
+
+.box-filme {
+  height: 250px;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 50px;
+}
+
+.btn-exibir {
+  font-size: 12px;
+  width: 90px;
+  height: 35px;
+  margin: 15px 5px;
+}
+
+.titulo-carrosel {
+  font-size: 35px;
+}
+
+.ver-btn,
+.btn-inscrever {
+  font-size: 20px;
+  width: 130px;
+  height: 30px;
+  background:orange;
+  color:white;
+  list-style:none;
+}
+
+a{
+text-decoration:none;
+color:black;  
+}
+.btn-inscrever:hover{
+background:#fff;
+color:black;
+}
+
+.box-exibir {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.inscricao {
+  background: linear-gradient(rgba(7, 7, 7, 0.5), rgb(10, 10, 10, 0.5) 100%),
+  url("../img/bg_inscreva.png");
+  background-size: cover;
+  background-attachment: scroll;
+ 
+}
+
+.titulo-inscreva {
+  padding-top: 50px;
+}
+
+.lista-funcoes {
+  margin-top: 45px;
+  font-size: 1.25rem;
+}
+
+.box-botao {
+  margin-top: 100px;
+}
+
+
+@media screen and (max-width:510px){
+  .txt-principal{
+  margin-top:50px;
+  margin-left:1.05em;
+  }
+
+  .descricao-main{
+   width:80%;
+   margin-left:1.05em; 
+  }
+
+  .botoes{
+   display:flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content: center; 
+  }
+
+  
+
+  .box-inscreva p{
+  width:100%;  
+  }
+}
+
+@media (max-width: 1200px) {
+  
+  .titulo-principal,
+  .titulo-inscreva {
+    font-size: 2.5rem;
+  }
+  .descricao-principal,
+  .inscricao p {
+    width: 50%;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .lista-funcoes {
+    margin-top: 20px;
+    font-size: 0.935rem;
+  }
+
+  .box-botao {
+    margin-top: 100px;
+  }
+}
+
+.logo_footer {
+  color: rgb(245, 128, 33);
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-footer {
+  color: rgb(245, 128, 33);
+  font-size: 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Responsividade do Footer */
+
+@media (max-width: 600px) {
+  .row {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+  
+  }
+
+  .col {
+    margin: 30px auto;
+  }
+}
+.col h5 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+
+
+}
+
+
+
+
+

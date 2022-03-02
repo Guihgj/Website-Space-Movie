@@ -1,0 +1,42 @@
+.btn-anime {
+  font-size: 12px;
+  width: 90px;
+  height: 45px;
+  margin:15px auto;
+  transition:0.2s ease;
+  cursor: pointer;
+  font-size:1.0rem;
+}
+
+.btn-anime:hover{
+background-color:#fff;
+color:black;  
+}
+
+.box-anime {
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-left:15px;
+  gap:10px;
+}
+
+.img-anime {
+  width: 150px;
+}
+
+@media screen  and (max-width:600px) {
+  .box-anime{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    margin-top:50px;
+  }
+
+  .botoes-anime{
+   display:flex;
+   flex-direction:column;
+  }
+}
